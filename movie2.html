@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  	<title>http request</title>
+
+    <script src="js/angular.min.js"></script>
+  	<script src="js/angular-route.min.js"></script>	
+	<script src="js/angular-animate.min.js"></script>
+	<script src="app2.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mycss.css">
+	
+	<style>
+	
+	</style>
+
+</head>
+
+<body>
+
+	<div ng-app="myApp" ng-controller="customersCtrl"> 	
+	
+	<div class="header">
+		
+		<div class="container">
+			<a href="#/" class="logo">Angular </a>
+			
+			<ul class="nav">
+				<li class="search">
+					<form  method="get" action="/search">
+						<input type="text" tabindex="1" placeholder="Search..." id="search" value="" name="query">
+					</form>
+				</li>
+				<li> <a href="#/"> Home </a> </li>
+				<li> <a href="#/about"> About </a> </li>
+				<li> <a href="#/forum"> Forum </a> </li>
+				<li> <a href="#/contact"> Contact </a> </li>
+			</ul>
+				
+			<div class="clearFix"></div>
+			
+		</div> <!-- container -->
+		
+		
+	</div>
+	
+	<div id="content">
+
+		<div class="container">
+			
+			<div class="view" ng-view style="width:100%;">
+
+			</div>  
+		<div class="clearFix"></div>
+
+		</div><!--container view-->
+
+	</div><!--content-->
+	
+	
+</div>
+
+<script>
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
